@@ -108,14 +108,118 @@
     Произошел переход в корзину. В корзине отображаются все добавленные товары.
                    
 - summary: |
-    Проверка просмотра содержимого корзины.
+    Проверка оптимизации скорости работы сайта.
   requirement: |
-    - Пользователь должен иметь возможность просматривать содержимое корзины.
+    - Веб-сайт должен быть разработан с учетом удобства использования и оптимизирован для скорости работы.
+  prerequisites:
+    Открыта страница магазина.
+  test-data: |
+    https://hexlet-products-store.vercel.app
+    https://be1.ru/site-speed/?url=hexlet-products-store.vercel.app
+  steps:
+    - Открываем сайт https://be1.ru/site-speed/?url=hexlet-products-store.vercel.app.
+    - Вводим адрес магазина в поле проверки.
+    - Нажимаем кнопку "Проверка".
+    - Открываем Network conditions.
+  expected-result: |
+    Скорость генерации страницы меньше 1с.
+                       
+- summary: |
+    Проверка сайта на безопасность.
+  requirement: |
+    - Сайт должен быть безопасным и защищать данные пользователя.
   prerequisites:
     Открыта страница магазина.
   test-data: |
     https://hexlet-products-store.vercel.app
   steps:
-    - Нажимаем на товаре на кнопку "Корзина".
+    - Открываем Devtools.
+    - Заходим во вкладку Security.
+    - Проверяем защиту сайта.
   expected-result: |
-    Произошел переход в корзину. В корзине отображаются все добавленные товары.
+    Сайт защищен протоколом https.
+                           
+- summary: |
+    Проверка наличия мобильной версии сайта.
+  requirement: |
+    - Сайт должен иметь мобильную версию.
+  prerequisites:
+    Открыта страница магазина.
+  test-data: |
+    https://hexlet-products-store.vercel.app
+  steps:
+    - Открываем Devtools.
+    - Переключаем сайт на мобильную версию.
+  expected-result: |
+    Сайт переходит в мобильный формат отображения.
+                               
+- summary: |
+    Проверка сайта на совместимость с браузером Opera.
+  requirement: |
+    - Сайт должен быть протестирован на совместимость с последними версиями браузеров.
+  prerequisites:
+    Открыт браузер Opera.
+  test-data: |
+    https://hexlet-products-store.vercel.app
+  steps:
+    - Открываем сайт магазина.
+  expected-result: |
+    Сайт открывается в браузере и корректно отображается.
+                                   
+- summary: |
+    Проверка сайта на совместимость с браузером Google Chrome.
+  requirement: |
+    - Сайт должен быть протестирован на совместимость с последними версиями браузеров.
+  prerequisites:
+    Открыт браузер Google Chrome.
+  test-data: |
+    https://hexlet-products-store.vercel.app
+  steps:
+    - Открываем сайт магазина.
+  expected-result: |
+    Сайт открывается в браузере и корректно отображается.
+                                       
+- summary: |
+    Проверка сайта на совместимость с браузером Microsoft Edge.
+  requirement: |
+    - Сайт должен быть протестирован на совместимость с последними версиями браузеров.
+  prerequisites:
+    Открыт браузер Google Microsoft Edge.
+  test-data: |
+    https://hexlet-products-store.vercel.app
+  steps:
+    - Открываем сайт магазина.
+  expected-result: |
+    Сайт открывается в браузере и корректно отображается.
+                                           
+- summary: |
+    Проверка сайта на обработку трафика.
+  requirement: |
+    - Сайт должен быть способен обрабатывать большое количество трафика.
+  prerequisites:
+    Открыта страница магазина.
+  test-data: |
+    https://hexlet-products-store.vercel.app
+    https://loaddy.com
+  steps:
+    - Открываем сайт https://loaddy.com
+    - Вводим в форма ввода адрес сайта магазина https://hexlet-products-store.vercel.app.
+    - Нажимаем кнопку "Проверка".
+  expected-result: |
+    Сайт способен обработать большое количество трафика.
+                                               
+- summary: |
+    Проверка сайта на доступность на различных устройствах.
+  requirement: |
+    - Сайт должен быть доступен на различных устройствах.
+  prerequisites:
+    Открыта страница магазина.
+  test-data: |
+    https://hexlet-products-store.vercel.app
+    https://loaddy.com
+  steps:
+    - Открываем сайт https://loaddy.com
+    - Вводим в форма ввода адрес сайта магазина https://hexlet-products-store.vercel.app.
+    - Нажимаем кнопку "Проверка".
+  expected-result: |
+    Сайт способен обработать большое количество трафика.
