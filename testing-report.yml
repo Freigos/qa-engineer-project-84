@@ -1,0 +1,80 @@
+---
+- summary: |
+    Проверка поиска товара по ключевому слову.
+  status: pass
+
+- summary: |
+    Проверка поиска товара по категории.
+  status: pass
+  
+- summary: |
+    Проверка работы фильтра Цена.
+  status: pass
+  
+- summary: |
+    Проверка работы фильтра Цвет.
+  status: fail
+  
+- summary: |
+    Проверка работы фильтра Размер.
+  status: fail
+    
+- summary: |
+    Проверка просмотра товара.
+  status: pass
+    
+- summary: |
+    Проверка добавления товара в корзину.
+  status: pass
+    
+- summary: |
+    Проверка просмотра содержимого корзины.
+  status: pass
+    
+- summary: |
+    Проверка оптимизации скорости работы сайта.
+  status: pass
+    
+- summary: |
+    Проверка сайта на безопасность.
+  status: pass
+      
+- summary: |
+    Проверка наличия мобильной версии сайта.
+  status: pass
+    
+- summary: |
+    Проверка сайта на совместимость с браузером Opera.
+  status: pass
+      
+- summary: |
+    Проверка сайта на совместимость с браузером Google Chrome.
+  status: pass
+    
+- summary: |
+    Проверка сайта на совместимость с браузером Microsoft Edge.
+  status: pass
+      
+- summary: |
+    Проверка сайта на обработку трафика.
+  status: pass
+    
+- summary: |
+    Проверка сайта на доступность на различных устройствах Asus.
+  status: pass
+        
+- summary: |
+    Проверка сайта на доступность на различных устройствах iPhone SE.
+  status: fail
+    
+- summary: |
+    Проверка сайта на доступность на различных устройствах iPad Air.
+  status: fail
+        
+- summary: |
+    Проверка, является ли сайт SPA-приложением.
+  status: fail
+    
+- summary: |
+    Проверка сохранения корзины в сессии браузера.
+  status: pass fail
