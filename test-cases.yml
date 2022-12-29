@@ -213,13 +213,63 @@
   requirement: |
     - Сайт должен быть доступен на различных устройствах.
   prerequisites:
+    Открыта страница магазина на ноутбуке Asus.
+  test-data: |
+    https://hexlet-products-store.vercel.app
+  steps:
+    - Открываем сайт в браузере.
+  expected-result: |
+    Сайт открывается и корректно отображается.
+                                                   
+- summary: |
+    Проверка сайта на доступность на различных устройствах.
+  requirement: |
+    - Сайт должен быть доступен на различных устройствах.
+  prerequisites:
+    Открыта страница магазина на iPhone SE.
+  test-data: |
+    https://hexlet-products-store.vercel.app
+  steps:
+    - Открываем сайт в браузере.
+  expected-result: |
+    Сайт открывается и корректно отображается.
+                                                       
+- summary: |
+    Проверка сайта на доступность на различных устройствах.
+  requirement: |
+    - Сайт должен быть доступен на различных устройствах.
+  prerequisites:
+    Открыта страница магазина на iPad Air.
+  test-data: |
+    https://hexlet-products-store.vercel.app
+  steps:
+    - Открываем сайт в браузере.
+  expected-result: |
+    Сайт открывается и корректно отображается.
+                                                       
+- summary: |
+    Проверка, является ли сайт SPA-приложением.
+  requirement: |
+    - Сайт должен быть SPA веб-приложением.
+  prerequisites:
     Открыта страница магазина.
   test-data: |
     https://hexlet-products-store.vercel.app
-    https://loaddy.com
   steps:
-    - Открываем сайт https://loaddy.com
-    - Вводим в форма ввода адрес сайта магазина https://hexlet-products-store.vercel.app.
-    - Нажимаем кнопку "Проверка".
+    - Переходим по разделам сайта.
   expected-result: |
-    Сайт способен обработать большое количество трафика.
+    Разделы сайта открываются без обновления страницы.
+                                                           
+- summary: |
+    Проверка сохранения корзины в сессии браузера.
+  requirement: |
+    - Корзина должна храниться в сессии браузера.
+  prerequisites:
+    Открыта страница магазина.
+  test-data: |
+    https://hexlet-products-store.vercel.app
+  steps:
+    - Открываем сайт в браузере.
+    - Переходим по разделам сайта.
+  expected-result: |
+    Разделы сайта открываются без обновления страницы.
