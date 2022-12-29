@@ -77,4 +77,4 @@
     
 - summary: |
     Проверка сохранения корзины в сессии браузера.
-  status: pass fail
+  status: pass
