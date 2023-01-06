@@ -249,7 +249,21 @@
     - Открываем корзину сайта.
   expected-result: |
     Сайт открывается и корректно отображается.
-                                                       
+                                                              
+- summary: |
+    Проверка сайта на доступность на различных устройствах Samsung Galaxy S20 Ultra.
+  requirement: |
+    - Сайт должен быть доступен на различных устройствах.
+  prerequisites:
+    Открыта страница магазина на Samsung Galaxy S20 Ultra.
+  test-data: |
+    https://hexlet-products-store.vercel.app
+  steps:
+    - Открываем главную страницу сайта.
+    - Открываем корзину сайта.
+  expected-result: |
+    Сайт открывается и корректно отображается. 
+    
 - summary: |
     Проверка, является ли сайт SPA-приложением.
   requirement: |
