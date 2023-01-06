@@ -68,9 +68,13 @@
   status: fail
     
 - summary: |
-    Проверка сайта на доступность на различных устройствах iPad Air.
+    Проверка сайта на доступность на различных устройствах iPad Air. 
   status: fail
-        
+            
+- summary: |
+    Проверка сайта на доступность на различных устройствах Samsung Galaxy S20 Ultra.
+  status: fail
+  
 - summary: |
     Проверка, является ли сайт SPA-приложением.
   status: fail
