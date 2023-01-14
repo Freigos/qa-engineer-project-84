@@ -46,7 +46,7 @@ test-cases:
 
   - summary: |
       Проверка на мультиязычность корзины сайта.
-    status: fail
+    status: pass
                 
   - summary: |
       Проверка удаления товара из корзины.
